@@ -79,7 +79,7 @@ def get_mock_route():
 
 @router.post("/rutas/optimizar", response_model=List[Container])
 def optimize_route(user_location: Location):
-    user_location_dict = user_location.dict()
+    user_location_dict = user_location.model_dump()
     optimized_ids = optimize_route_with_gemini(containers_db, user_location_dict)
     
     # Crear un diccionario para acceso rápido

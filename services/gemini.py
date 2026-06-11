@@ -1,9 +1,18 @@
-import requests 
+import os
+import requests
+from dotenv import load_dotenv
 
-GEMINI_API_KEY = "token"
+load_dotenv()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
 
 def optimize_route_with_gemini(containers, user_location):
+    if not GEMINI_API_KEY:
+        raise Exception(
+            "GEMINI_API_KEY no está configurada. Defínela en el archivo .env del backend."
+        )
+
     prompt = generate_prompt(containers, user_location)
 
     payload = {
