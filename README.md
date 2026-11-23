@@ -1,3 +1,10 @@
+> **This repository is archived.** Zyrcle continues in the monorepo
+> [github.com/diegowritescode/zyrcle](https://github.com/diegowritescode/zyrcle), where this code was
+> imported with its full history (tag `v0-hackathon`, folder `apps/api` at that tag) and then rebuilt.
+> What happened since is in [docs/history.md](https://github.com/diegowritescode/zyrcle/blob/main/docs/history.md).
+>
+> **Este repositorio está archivado.** Zyrcle sigue en el monorepo de arriba.
+
 # Zyrcle Backend - Sustainable Recycling Platform
 
 The **Zyrcle Backend** powers the Zyrcle decentralized application (dApp), enabling sustainable recycling by integrating IoT smart containers, AI-driven route optimization, and data management for a blockchain-based recycling platform on **Avalanche**. Built with **Python**, this backend handles container scanning, residence stats, collector routes, and IoT data processing, supporting the React and Web3.js frontend.
